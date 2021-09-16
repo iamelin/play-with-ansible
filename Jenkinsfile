@@ -1,11 +1,13 @@
 #!groovy
 
 pipeline {
+    agent any
+
     stages {
-        stage('Deploy') {
+        stage('Run Ansible') {
             steps {
                 script {
-                    echo '### Deploy ###'
+                    echo '### Ansible ###'
                     ansiColor('xterm') {
                         ansiblePlaybook(
                             colorized: true,
