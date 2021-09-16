@@ -1,0 +1,2 @@
+my_user_login: "login"
+my_user_password: "{{ vault_my_user_password }}"

@@ -1,0 +1,12 @@
+---
+
+- name: Print data
+  hosts: localhost
+  tasks:
+    - name: Print login
+      debug:
+        msg: "Login: {{ my_user_login }}"
+
+    - name: Print password
+      debug:
+        msg: "Password: {{ my_user_password }}"
